@@ -4,3 +4,12 @@
 	height: 4em;
 	width: 4em;
 }
+
+.slide {
+	width: 20%;
+	height: 20%;
+}
+
+#carousel-example-generic {
+	width: 100%;
+}
