@@ -1,8 +1,27 @@
 /* custom styles */
 
+header {
+	height: 14em;
+	background-color: lightgray;
+}
+
 #yasuPhoto {
 	height: 4em;
 	width: 4em;
+	border-radius: 10px;
+	margin: 0 40%;
+	margin-top: 2em;
+	display: inline-block;
+}
+
+h1 {
+	display: inline-block;
+	margin-left: 15%;
+}
+
+#contents {
+	width: 90%;
+	margin: 0 auto;
 }
 
 .slide {
@@ -13,3 +32,25 @@
 #carousel-example-generic {
 	width: 100%;
 }
+
+a {
+	text-decoration: none;
+}
+
+.projectLinks {
+	width: 45%;
+	height: 10em;
+	background-color: lightblue;
+	display: inline-block;
+	margin: 1em auto;
+	text-align: center;
+	padding-top: 4em;
+	margin-left: .8em;
+}
+
+#headerNav div {
+ display: inline-block;
+ margin: 0 1em;
+ margin-left: 1.5em;
+}
+
