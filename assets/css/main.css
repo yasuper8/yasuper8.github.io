@@ -1,8 +1,30 @@
 /* custom styles */
 
+
+body {
+
+}
+
+
 header {
 	height: 14em;
 	background-color: lightgray;
+	/*background-image: url("http://i.imgur.com/agqb4rd.jpg");*/
+}
+
+#headerPhoto {
+	max-width: 100%;
+	position: relative;
+}
+#my-name {
+	position: absolute;
+	height: 3em;
+	top: 1.8em;
+	background-color: #ddd;
+	padding: 2em;
+	text-align: center;
+	border-radius: 0 10px 10px 0;
+
 }
 
 #yasuPhoto {
@@ -12,6 +34,8 @@ header {
 	margin: 0 40%;
 	margin-top: 2em;
 	display: inline-block;
+	color: #444;
+
 }
 
 h1 {
@@ -40,7 +64,7 @@ a {
 .projectLinks {
 	width: 45%;
 	height: 10em;
-	background-color: lightblue;
+	background-color: #CDEAC0;
 	display: inline-block;
 	margin: 1em auto;
 	text-align: center;
@@ -49,8 +73,12 @@ a {
 }
 
 #headerNav div {
- display: inline-block;
  margin: 0 1em;
  margin-left: 1.5em;
+ float:right;
 }
 
+
+/*#headerNav div li {
+	display: inline-block;
+}*/
