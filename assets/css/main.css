@@ -15,26 +15,43 @@ header {
 #headerPhoto {
 	max-width: 100%;
 	position: relative;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .5s;
 }
+
+#headerPhoto:hover {
+	opacity: 1;
+}
+
+
 #my-name {
 	position: absolute;
-	height: 3em;
-	top: 1.8em;
+	opacity: .3;
+	top: .6em;
 	background-color: #ddd;
-	padding: 2em;
+	padding: .5em;
 	text-align: center;
 	border-radius: 0 10px 10px 0;
+	font-size: 2.5em;
+	transition-property: opacity;
+	transition-duration: .5s;
+}
 
+#my-name:hover {
+	opacity: 1;
 }
 
 #yasuPhoto {
-	height: 4em;
-	width: 4em;
+	height: 6em;
+	width: 6em;
 	border-radius: 10px;
 	margin: 0 40%;
 	margin-top: 2em;
 	display: inline-block;
 	color: #444;
+	top: 3em;
+	display: relative;
 
 }
 
