@@ -2,7 +2,8 @@
 
 
 body {
-
+	font-family: 'Space Mono', monospace;;
+	background-color: #E5FCFF;
 }
 
 
@@ -11,6 +12,9 @@ header {
 	background-color: lightgray;
 	/*background-image: url("http://i.imgur.com/agqb4rd.jpg");*/
 }
+#wrapper-head {
+	background-color: #BEE3DB;
+}
 
 #headerPhoto {
 	max-width: 100%;
@@ -18,12 +22,16 @@ header {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: .5s;
+	z-index: 100;
 }
 
 #headerPhoto:hover {
 	opacity: 1;
 }
 
+.mainP {
+	max-width: 80%;
+}
 
 #my-name {
 	position: absolute;
@@ -34,25 +42,58 @@ header {
 	text-align: center;
 	border-radius: 0 10px 10px 0;
 	font-size: 2.5em;
-	transition-property: opacity;
+	font-weight: bold;
+	transition-property: opacity color;
 	transition-duration: .5s;
+	z-index: 1000;
+	color: #ddd;
 }
 
 #my-name:hover {
 	opacity: 1;
+	color: #222;
+	font-size: 2.5em;
 }
 
-#yasuPhoto {
-	height: 6em;
-	width: 6em;
-	border-radius: 10px;
-	margin: 0 40%;
-	margin-top: 2em;
-	display: inline-block;
-	color: #444;
-	top: 3em;
-	display: relative;
+/*#about-me {
+	position: absolute;
+	background-color: #ddd;
+	padding: .5em;
+	text-align: center;
+	font-size: 2.5em;
+	top: .6em;
+	right: 0;
+	border-radius: 10px 0 0 10px;
+	z-index: 1000;
+	color: #ddd;
+	transition-property: opacity color;
+	transition-duration: .5s;
+	opacity: .3;
+}*/
 
+#about-me:hover {
+	opacity: 1;
+	color: #222;
+}
+
+
+#yasuPhoto {
+
+	width: 25%;
+	border-radius: 30px;
+	margin: 10% 40% 20% 60%;
+	position: absolute;
+	left: 3em;
+	color: #444;
+	top: 5em;
+	display: absolute;
+
+}
+
+#page-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	/*background-color: #F7FFDD;*/
 }
 
 h1 {
@@ -76,26 +117,71 @@ h1 {
 
 a {
 	text-decoration: none;
+	color: #aaa;
 }
 
+a:hover {
+	text-decoration: none;
+}
 .projectLinks {
-	width: 45%;
+	width: 20%;
 	height: 10em;
-	background-color: #CDEAC0;
+	background-color: #56A4D8;
 	display: inline-block;
 	margin: 1em auto;
 	text-align: center;
-	padding-top: 4em;
-	margin-left: .8em;
+	padding-top: 1em;
+
+	margin-left: 2em;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.projectLinks:hover {
+	background-color: #0094FF
+}
+
+.portfolioLinks {
+	color: #fff;
+}
+
+#portfolioTitle {
+	background-color: #56A4D8;
+	color:#fff;
+	height: 3em;
+	font-size: 3em;
+	text-align: center;;
+	padding-top: .2em;
+}
+
+.projectInfo {
+	font-size: .6em;
+	padding-top: .7em;
 }
 
 #headerNav div {
  margin: 0 1em;
- margin-left: 1.5em;
+ margin-left: .5em;
  float:right;
 }
 
+h1 {
+	font-size: 3em;
+}
 
+.icons {
+	width: 10%;
+	left:3em;
+}
+
+.logos {
+	width:5%;
+}
+.github {
+	width: 7%;
+}
 /*#headerNav div li {
 	display: inline-block;
 }*/
