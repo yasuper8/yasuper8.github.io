@@ -1,5 +1,86 @@
 /* custom styles */
 
+body {
+  background-color: #E5FCFF;
+  font-family: 'Space Mono', monospace;
+}
+
 #mainContainer {
   width: 80%;
+  margin: 0 auto;
+
 }
+
+
+.projectTiles {
+  height: 16em;;
+  background-color: #4C5B5C;
+  border-radius: 40px;;
+  color: #eee;
+  padding:1
+  padding-top: 1.2em;
+  border: 1em solid #E5FCFF;
+  text-align: center;
+  transition-duration: .3s;
+  transition-property: background-color
+}
+
+.projectTiles:hover {
+  background-color: #DB5461;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+	text-decoration: none;
+  color: #FDE74C;
+}
+
+.my-name {
+  height: 3em;
+  background-color: #56A4D8;
+  color: #eee;
+  font-size: 3em;
+  text-align: center;
+  padding-top: .6em;
+}
+
+.mtEvelest {
+  position: relative;
+}
+
+.email-icon {
+  width: 10%;
+}
+.github-icon {
+  width: 10%;
+}
+
+
+ .helloYasu {
+  height:15em;
+  position: absolute;
+  top: 5em;
+  background-color: #FDE74C;
+  padding-left: 4em;
+  border-radius: 0 30px 30px 0;
+  font-size: 1.2em;
+  opacity: 0;
+  transition-duration: .5s;
+  transition-property: opacity font-size height;
+ }
+
+ .helloYasu:hover {
+   opacity: 1;
+   font-size: 1.2em;
+   height:10em;
+ }
+
+ #yasuHeadShot {
+   width: 25%;
+   border-radius: 30px;
+   margin-left: 29em;
+   z-index: 3000;
+ }
